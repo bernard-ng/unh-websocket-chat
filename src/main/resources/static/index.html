@@ -2,9 +2,8 @@
 <html lang="fr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <title>ChatBox + Spring Boot + WebSocket</title>
-    <link rel="stylesheet" href="https://dashlite.net/demo2/assets/css/dashlite.css?ver=3.2.0">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Chat Network</title>
+    <link rel="stylesheet" href="/css/main.css">
     <style>
         .chat-meta li:not(:first-child):before {
             content: "-";
@@ -27,7 +26,7 @@
                             <div class="nk-block nk-block-middle nk-auth-body">
                                 <div class="brand-logo pb-5">
                                     <a href="/" class="logo-link">
-                                        <img class="logo-img logo-img-lg" src="https://raw.githubusercontent.com/unhorizons/report-manager/master/public/images/logo_full.jpg" alt="logo">
+                                        <img class="logo-img logo-img-lg" src="/images/logo_full.jpg" alt="logo">
                                     </a>
                                 </div>
                                 <div class="nk-block-head">
@@ -89,14 +88,14 @@
                                     <div class="nk-chat-panel" id="messageArea">
                                     </div>
                                     <div class="nk-chat-editor">
-                                        <form method="post" id="messageForm" name="messageForm" class="nk-chat-editor-form">
+                                        <form method="post" id="messageForm" name="messageForm" class="nk-chat-editor-form d-inline-block">
                                             <div class="form-control-wrap">
                                                 <input aria-label="message" type="text" name="message" class="form-control form-control-simple no-resize" id="message" placeholder="message..." />
                                             </div>
                                         </form>
                                         <ul class="nk-chat-editor-tools g-2">
                                             <li>
-                                                <button class="btn btn-round btn-primary">
+                                                <button type="submit" form="messageForm" class="btn btn-round btn-primary">
                                                     Envoyer
                                                 </button>
                                             </li>
@@ -119,8 +118,9 @@
     </div>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/alert.js"></script>
+<script src="/js/sockjs.js"></script>
+<script src="/js/stomp.js"></script>
 <script src="/js/main.js"></script>
 </body>
 </html>
