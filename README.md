@@ -20,8 +20,8 @@ Notre application de chat en groupe offre une plateforme sécurisée et interact
 </p>
 
 ## Documents
-- [Requirements](presentation/2_poo_unh_cahier.pdf)
-- [Speciations](presentation/2_poo_unh_besoins.pdf)
+- [Requirements](presentation/2_poo_unh_cahier_23.pdf)
+- [Speciations](presentation/2_poo_unh_besoins_23.pdf)
 - [UML Diagrams](presentation/2_poo_unh_uml_23.pdf)
 
   ## Screenshots
